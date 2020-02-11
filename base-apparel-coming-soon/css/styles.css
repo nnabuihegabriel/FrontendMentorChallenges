@@ -202,32 +202,53 @@ img {
     width: 100%;
     margin-top: 7rem;
   }
+  .container .content .cta__error-icon {
+    left: 65%;
+  }
 }
 
 @media screen and (min-width: 768px) {
   html, body {
-    font-size: 90%;
-  }
-  img {
-    max-width: 100%;
-  }
-  .header-mobile {
-    display: none;
+    font-size: 70%;
   }
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .container .content {
+    width: 75%;
+  }
+  .container .content .cta__error-icon {
+    left: 75%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html, body {
+    font-size: 90%;
+  }
+  img {
+    max-width: initial;
+  }
+  .header-mobile {
+    display: none;
+  }
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   .container .content {
     margin: 0;
@@ -247,9 +268,36 @@ img {
             align-items: start;
     letter-spacing: 20px;
   }
+  .container .content .heading h1 div {
+    line-height: 1.2;
+  }
   .container .content .about {
     text-align: left;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    width: 97%;
+  }
+  .container .content .cta__input {
+    font-size: 1.2rem;
+  }
+  .container .content .cta__btn {
+    margin-left: -65px;
+  }
+  .container .content .cta__error-icon {
+    left: 70%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  html, body {
+    font-size: 120%;
+  }
+  .container {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+  }
+  .container .content {
+    padding: 7rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
