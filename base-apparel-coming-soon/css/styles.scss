@@ -275,16 +275,23 @@ img {
     }
 }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 1920px) {
     html, body {
-        font-size: 120%;
+        font-size: 100%;
     }
 
     .container {
+        width: 1440px;
+        margin: auto;
+        height: 100vh;
         justify-content: initial;
 
         .content {
-            padding: 7rem;
+            padding: 6rem;
+
+            .header-desktop {
+                top: 2rem;
+            }
         }
     }
 }
